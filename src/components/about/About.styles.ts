@@ -23,7 +23,6 @@ export const Section = styled.section`
   padding: ${fluid(46, 92)} ${fluid(24, 64)} ${fluid(1, 12)};
   max-width: 1440px;
   margin: 0 auto;
-  scroll-margin-top: 5rem;
 
   ${DESKTOP} {
     grid-template-columns: minmax(16rem, 26.25rem) minmax(0, 1fr);

@@ -28,6 +28,13 @@ body {
   min-height: 100%;
 }
 
+/* Hash links ease into the section. Reduced motion keeps the instant jump. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: var(--paper);
   color: var(--ink);

@@ -12,9 +12,13 @@ const fluid = (at390: number, at1440: number) => {
 export const Section = styled.section`
   background: var(--ink);
   color: var(--paper);
-  padding: ${fluid(42, 57)} ${fluid(24, 64)} ${fluid(80, 72)};
+`;
+
+/** Keeps the copy on the 1440 frame while the ink background runs to the viewport edges. */
+export const Inner = styled.div`
   max-width: 1440px;
   margin: 0 auto;
+  padding: ${fluid(42, 57)} ${fluid(24, 64)} ${fluid(80, 72)};
 `;
 
 export const Kicker = styled.p`

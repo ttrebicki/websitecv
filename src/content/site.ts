@@ -378,8 +378,8 @@ export const site = {
     title: 'Let’s make something click.',
     body: 'Thoughtful interfaces. Useful systems. A good conversation to start.',
     email: {
-      label: 't.trebicki1103@gmail.com ↗',
-      href: 'mailto:t.trebicki1103@gmail.com',
+      label: 'ttrebicki.work@gmail.com ↗',
+      href: 'mailto:ttrebicki.work@gmail.com',
     },
     github: {
       label: 'GITHUB ↗',
@@ -397,7 +397,7 @@ export const cv = {
   role: 'Full-stack TypeScript Developer (frontend focus)',
   pageNumbers: ['1 / 2', '2 / 2'],
   header: {
-    locationLine: 'Warsaw, Poland | t.trebicki1103@gmail.com | +48 519 767 459',
+    locationLine: 'Warsaw, Poland | ttrebicki.work@gmail.com | +48 519 767 459',
     linksLine: 'hmmmm.cool | linkedin.com/in/ttrebicki | github.com/ttrebicki',
   },
   portrait: images.cvPortrait,

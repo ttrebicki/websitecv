@@ -23,6 +23,9 @@ export const Section = styled.section`
   background: var(--mint);
   color: var(--ink);
   padding: ${fluid(42, 56)} ${fluid(24, 64)} ${fluid(61, 43)};
+  /* At least one screen tall, so the top edge can sit on the top of the viewport. */
+  min-height: 100vh;
+  min-height: 100dvh;
 `;
 
 export const Kicker = styled.p`

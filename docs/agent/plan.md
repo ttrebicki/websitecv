@@ -74,7 +74,7 @@ Acceptance: `02 / HOW I WORK`, `More leverage.`, and `Same accountability.` are 
 
 Owned: `src/components/contact/Contact.tsx`, `src/components/contact/Contact.styles.ts`.
 
-Acceptance: section id `contact`. The visible text includes `06 / SAY HELLO`, `Let’s make something click.`, and `Thoughtful interfaces. Useful systems. A good conversation to start.` The email is `mailto:t.trebicki1103@gmail.com`. GitHub and LinkedIn match the content map. The phone number is not rendered.
+Acceptance: section id `contact`. The visible text includes `06 / SAY HELLO`, `Let’s make something click.`, and `Thoughtful interfaces. Useful systems. A good conversation to start.` The email is `mailto:ttrebicki.work@gmail.com`. GitHub and LinkedIn match the content map. The phone number is not rendered.
 
 ## Milestone cv
 

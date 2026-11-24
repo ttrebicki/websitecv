@@ -3,6 +3,7 @@ import {
   Asides,
   Body,
   DesktopCopy,
+  Inner,
   Intro,
   Kicker,
   MobileCopy,
@@ -19,38 +20,40 @@ const { practice } = site;
 
 export const Practice = () => (
   <Section>
-    <Kicker>{practice.kicker}</Kicker>
-    <Intro>
-      <Title>
-        {practice.title}
-        <br />
-        {practice.titleEnd}
-      </Title>
-      <Asides>
-        {practice.asides.desktop.map((line) => (
-          <p key={line}>{line}</p>
+    <Inner>
+      <Kicker>{practice.kicker}</Kicker>
+      <Intro>
+        <Title>
+          {practice.title}
+          <br />
+          {practice.titleEnd}
+        </Title>
+        <Asides>
+          {practice.asides.desktop.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
+        </Asides>
+      </Intro>
+      <Body>{practice.body}</Body>
+      <Steps>
+        {practice.steps.map((step) => (
+          <Step key={step.number}>
+            <StepNumber>{step.number}</StepNumber>
+            <StepTitle>{step.title}</StepTitle>
+            <StepBody>
+              {typeof step.body === 'string' ? (
+                step.body
+              ) : (
+                <>
+                  <DesktopCopy>{step.body.desktop}</DesktopCopy>
+                  <MobileCopy>{step.body.mobile}</MobileCopy>
+                </>
+              )}
+            </StepBody>
+          </Step>
         ))}
-      </Asides>
-    </Intro>
-    <Body>{practice.body}</Body>
-    <Steps>
-      {practice.steps.map((step) => (
-        <Step key={step.number}>
-          <StepNumber>{step.number}</StepNumber>
-          <StepTitle>{step.title}</StepTitle>
-          <StepBody>
-            {typeof step.body === 'string' ? (
-              step.body
-            ) : (
-              <>
-                <DesktopCopy>{step.body.desktop}</DesktopCopy>
-                <MobileCopy>{step.body.mobile}</MobileCopy>
-              </>
-            )}
-          </StepBody>
-        </Step>
-      ))}
-    </Steps>
+      </Steps>
+    </Inner>
   </Section>
 );
 

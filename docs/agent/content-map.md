@@ -190,7 +190,7 @@ Mobile joins the first role as `Front-end Developer · Remote` and omits `Warsaw
 
 `Thoughtful interfaces. Useful systems. A good conversation to start.`
 
-`t.trebicki1103@gmail.com ↗` → `mailto:t.trebicki1103@gmail.com`
+`ttrebicki.work@gmail.com ↗` → `mailto:ttrebicki.work@gmail.com`
 
 `GITHUB ↗` → `https://github.com/ttrebicki/`
 
@@ -206,7 +206,7 @@ Headline rises 14px and settles. The asterisk turns, overshoots, and settles in 
 
 Two-page, single-column, selectable text. Portrait only on page 1. No rating bars, sidebars, or tables. Page numbers `1 / 2` and `2 / 2`.
 
-Header: `Tomasz Trębicki`, `Full-stack TypeScript Developer (frontend focus)`, `Warsaw, Poland | t.trebicki1103@gmail.com | +48 519 767 459`, `hmmmm.cool | linkedin.com/in/ttrebicki | github.com/ttrebicki`.
+Header: `Tomasz Trębicki`, `Full-stack TypeScript Developer (frontend focus)`, `Warsaw, Poland | ttrebicki.work@gmail.com | +48 519 767 459`, `hmmmm.cool | linkedin.com/in/ttrebicki | github.com/ttrebicki`.
 
 Page 2 repeats the name and role only.
 
