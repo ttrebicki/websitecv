@@ -1,0 +1,35 @@
+:root {
+  --paper: #f4f5f0;
+  --mint: #62fdbc;
+  --ink: #14211c;
+  --hairline: #3dc994;
+  --muted: #53655a;
+  --body-muted: #355c4b;
+  --card: #e2eae1;
+  --going: #dce3d8;
+  --deep: #12695d;
+  --line: #ccd5ca;
+  --soft: #b4c5b8;
+  --stage-line: #43564a;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), monospace;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
