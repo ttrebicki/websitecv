@@ -65,6 +65,41 @@ const restMotion = css`
   }
 `;
 
+/** Letters shift through the rainbow once, then return to ink. */
+const rainbowLetters = keyframes`
+  0% {
+    color: transparent;
+    background-position: 0% 50%;
+  }
+
+  75% {
+    color: transparent;
+    background-position: 100% 50%;
+  }
+
+  100% {
+    color: var(--ink);
+    background-position: 100% 50%;
+  }
+`;
+
+/** One gloss, named Klinika Polinice, crosses the headline from left to right. */
+const klinikaPolinice = keyframes`
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+`;
+
 export const HeroRoot = styled.section`
   overflow-x: hidden;
   background: var(--mint);
@@ -125,6 +160,8 @@ export const EyebrowMobile = styled(Eyebrow)`
 `;
 
 export const Headline = styled.h1`
+  position: relative;
+  overflow: hidden;
   margin: 0 0 ${fluid(24, 50)};
   max-width: ${fluid(350, 1050)};
   font-family: var(--font-display);
@@ -135,8 +172,45 @@ export const Headline = styled.h1`
   ${restMotion}
 `;
 
+/** The Klinika Polinice gloss. Hidden from assistive tech; it is decoration. */
+export const Gloss = styled.span`
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: white;
+  font: inherit;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  animation: ${klinikaPolinice} 1.4s ease-in-out 1 both;
+
+  @media (prefers-reduced-motion: reduce) {
+    display: none;
+  }
+`;
+
 export const HeadlineLine = styled.span`
   display: block;
+  background-image: linear-gradient(
+    90deg,
+    #ff5a5a,
+    #ffb020,
+    #ffe14a,
+    #3dff8a,
+    #3dc9ff,
+    #8a6dff,
+    #ff4d9a,
+    #ff5a5a
+  );
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: var(--ink);
+  animation: ${rainbowLetters} 1.3s ease-in-out 1;
+  ${restMotion}
 `;
 
 export const Lead = styled.p`
