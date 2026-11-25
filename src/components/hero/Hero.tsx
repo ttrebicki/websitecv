@@ -8,7 +8,6 @@ import {
   Asterisk,
   EyebrowDesktop,
   EyebrowMobile,
-  Gloss,
   Hairline,
   Headline,
   HeadlineLine,
@@ -46,7 +45,6 @@ export const Hero = () => (
           {HEADLINE_LINES.map((line) => (
             <HeadlineLine key={line}>{line}</HeadlineLine>
           ))}
-          <Gloss aria-hidden="true">Klinika Polinice</Gloss>
         </Headline>
         <Lead>{heroLead}</Lead>
       </Intro>

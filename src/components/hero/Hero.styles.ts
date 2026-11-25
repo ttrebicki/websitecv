@@ -83,23 +83,6 @@ const rainbowLetters = keyframes`
   }
 `;
 
-/** One gloss, named Klinika Polinice, crosses the headline from left to right. */
-const klinikaPolinice = keyframes`
-  0% {
-    transform: translateX(-120%);
-    opacity: 0;
-  }
-
-  15% {
-    opacity: 0.9;
-  }
-
-  100% {
-    transform: translateX(120%);
-    opacity: 0;
-  }
-`;
-
 export const HeroRoot = styled.section`
   overflow-x: hidden;
   background: var(--mint);
@@ -160,8 +143,6 @@ export const EyebrowMobile = styled(Eyebrow)`
 `;
 
 export const Headline = styled.h1`
-  position: relative;
-  overflow: hidden;
   margin: 0 0 ${fluid(24, 50)};
   max-width: ${fluid(350, 1050)};
   font-family: var(--font-display);
@@ -170,26 +151,6 @@ export const Headline = styled.h1`
   line-height: ${fluid(42, 102)};
   animation: ${headlineRise} 650ms ease-out 1 both;
   ${restMotion}
-`;
-
-/** The Klinika Polinice gloss. Hidden from assistive tech; it is decoration. */
-export const Gloss = styled.span`
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  color: white;
-  font: inherit;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  pointer-events: none;
-  mix-blend-mode: soft-light;
-  animation: ${klinikaPolinice} 1.4s ease-in-out 1 both;
-
-  @media (prefers-reduced-motion: reduce) {
-    display: none;
-  }
 `;
 
 export const HeadlineLine = styled.span`
@@ -209,7 +170,7 @@ export const HeadlineLine = styled.span`
   background-clip: text;
   -webkit-background-clip: text;
   color: var(--ink);
-  animation: ${rainbowLetters} 1.3s ease-in-out 1;
+  animation: ${rainbowLetters} 1.8s ease-in-out 1;
   ${restMotion}
 `;
 
