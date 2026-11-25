@@ -250,7 +250,7 @@ export const WorkspaceTitle = styled.p`
 `;
 
 export const TabRow = styled.div`
-  align-items: end;
+  align-items: baseline;
   border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
